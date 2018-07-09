@@ -1,0 +1,13 @@
+<html ng-app="vidya">
+    <head>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+        </head>
+        <body>
+            <div ng-controller="ctrl1">
+                <div ng-repeat="x in cars track by $index">
+                    <h1 ng-if="$index==4">{{x}}</h1>
+                </div>
+            </div>
+        </body>
+</html>
